@@ -1,0 +1,4 @@
+# Serve the React production build at the existing XAMPP project URL.
+RewriteEngine On
+RewriteRule ^(?:index\.html)?$ dist/index.html [L]
+RewriteRule ^(assets|build)/(.*)$ dist/$1/$2 [L]

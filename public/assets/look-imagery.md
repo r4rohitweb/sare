@@ -1,0 +1,11 @@
+# Try the Look imagery
+
+Eight illustrative model cutouts generated with the built-in imagegen tool with transparent background enabled. The four-column, two-row atlas was split into equal cells and encoded as WebP while preserving the alpha channel.
+
+Assets: `look-teal.webp`, `look-pink.webp`, `look-blue.webp`, `look-purple.webp`, `look-green.webp`, `look-orange.webp`, `look-yellow.webp`, `look-maroon.webp`.
+
+These are generated style references, rather than a live product catalog.
+
+Final prompt:
+
+Use case: photorealistic-natural. Asset type: transparent-background sprite atlas of EIGHT individual Indian silk saree fashion models for an interactive website. Output a square 2048x2048 canvas with a precise grid of FOUR equal-width columns and TWO equal-height rows (4 columns x 2 rows), exactly ONE full-length adult Indian woman in EACH of the eight equal cells. Each model must be fully separate, entirely inside her own cell, centered with generous transparent margins around head, feet, and flowing fabric. Each woman stands gracefully in a slightly different fashion pose wearing a richly detailed Kanjivaram silk saree with a broad gold zari border and traditional jewelry. Show entire person head to bare feet. Photorealistic editorial catalog lighting, crisp detailed silk. Background genuinely fully transparent, no backdrop, no rectangles, no shadow outside figure. Top row left to right: 1 teal turquoise saree with fuchsia blouse and ornate gold border, 2 vivid pink saree with navy blouse and gold border, 3 royal blue saree with magenta blouse and gold border, 4 deep purple saree with gold blouse and gold brocade pallu. Bottom row left to right: 5 emerald green saree with mustard blouse and gold border, 6 brilliant orange saree with teal blouse and gold border, 7 sunny mustard yellow saree with maroon blouse and gold border, 8 deep maroon red saree with emerald blouse and gold temple triangle border. Elegant Indian women with realistic faces and hands, neat long black hair or jasmine-adorned buns, gold necklaces, earrings, waist belts and bangles. Figures should fill about 85 percent of each cell's height and at most 80 percent of its width, no overlap between any cells. No text, no labels, no collage borders, no watermarks, no furniture. All eight equal grid cells and all eight entire figures MUST be present.
