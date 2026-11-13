@@ -14,7 +14,7 @@
 @media(max-width:520px){:root{--ticker-height:31px}.site-header{width:calc(100% - 26px);top:14px;min-height:65px;padding:9px 11px 9px 15px;gap:4px}.brand{width:95px}.brand>span{font-size:22px;line-height:20px}.brand svg{height:18px}.brand small{font-size:4px;letter-spacing:1.2px}.header-actions{gap:2px}.wishlist{display:none}.store-button{padding:5px 5px 5px 11px;font-size:10px;gap:6px}.store-button>span{width:24px;height:24px}.menu-toggle{margin-left:3px}.hero{min-height:620px}.hero-image{background-position:61% center}.hero-shade{background:linear-gradient(0deg,#170806e8,rgba(18,8,5,.28) 53%,#1c0c0710 80%)}.hero-content{left:24px;right:24px;bottom:56px}.eyebrow{font-size:7px;letter-spacing:1px;gap:6px;padding:7px 10px;margin-bottom:18px}h1{font-size:49px;letter-spacing:-2.1px;max-width:360px;line-height:1.04;margin-bottom:19px}.hero-description{font-size:12px;line-height:1.8;margin-bottom:23px;max-width:340px}.desktop-break{display:none}.button{font-size:11px;min-height:46px;padding-left:17px;gap:16px}.button-secondary{padding-right:15px;gap:17px}.button-icon{width:30px;height:30px}.hero-actions{gap:9px}.sound-toggle{right:20px;bottom:12px;width:28px;height:28px}.ticker-track>span{font-size:10px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.curtain-intro,.skip-intro{display:none}.hero-content{opacity:1}.ticker-track{transform:none}}
 
-/* The Noolam archive — section two. */
+/* The Silkora archive — section two. */
 body{padding-bottom:var(--ticker-height)}
 .ticker{position:fixed;bottom:0;left:0;right:0;z-index:6}
 .archive{background:#fcfbf8;color:#2c292c;scroll-margin-top:24px;overflow:hidden}

@@ -81,7 +81,7 @@ export default function TheMuse() {
       </div>
       <div className="muse-footer">
         <span>
-          {"THE NOOLAM MUSE"}
+          {"THE SILKORA MUSE"}
         </span>
         <p>
           {"For the moments that become memories."}

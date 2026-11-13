@@ -36,7 +36,7 @@ export default function Hero() {
           </h1>
           <p className="hero-description">
             <strong>
-              {"NOOLAM"}
+              {"SILKORA"}
             </strong>
             {" brings the temple looms of Kanchipuram home: Kanjivaram silk in"}
             <br className="desktop-break" />

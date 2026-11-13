@@ -52,7 +52,7 @@ test('looks, bag deduplication, persistence and removal work', async ({ page }) 
 test('rack filters, favourites and shared shopping work', async ({ page }) => {
   await page.goto('./#the-rack');
   await page.locator('[data-rack-index="9"]').click();
-  await expect(page.locator('#rack-product-title')).toHaveText('Noolam Rani Pink Temple Border');
+  await expect(page.locator('#rack-product-title')).toHaveText('Silkora Rani Pink Temple Border');
   await page.locator('.rack-favourite').click();
   await expect(page.locator('.rack-favourite')).toHaveAttribute('aria-pressed', 'true');
   await page.locator('.rack-add').click();

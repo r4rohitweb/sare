@@ -1,6 +1,6 @@
-# NOOLAM ? React showroom
+# SILKORA ? React showroom
 
-A React 19 and Vite site for the NOOLAM silk saree showroom. The existing design, scroll-driven video, galleries, shopping bag, favourites, bridal collection and canvas weave are preserved.
+A React 19 and Vite site for the SILKORA silk saree showroom. The existing design, scroll-driven video, galleries, shopping bag, favourites, bridal collection and canvas weave are preserved.
 
 ## Develop
 
@@ -62,7 +62,7 @@ The remount fixture is intentionally skipped against a production build. Externa
 
 ## Content and behavior
 
-The shared bag and favourites persist in this browser with the original localStorage keys, preserving existing saved selections. The bag is a styling list, not checkout. Product descriptions and campaign images are illustrative; availability and pricing are confirmed in store.
+The shared bag and favourites persist in this browser under silkora-prefixed localStorage keys. Existing selections from the previous brand are migrated automatically without overwriting newer Silkora selections. The bag is a styling list, not checkout. Product descriptions and campaign images are illustrative; availability and pricing are confirmed in store.
 
 The hero seeks the user-supplied muted walking-and-sitting video as the page scrolls. It retains WebM, poster and generated-scene fallbacks, lazy media loading and reduced-motion behavior. Campaign galleries use photographs. Other behavior includes accessible dialogs, keyboard navigation, swipe gestures, paused automatic rotation and native scrolling.
 

@@ -27,12 +27,12 @@ export default function Footer() {
         </div>
         <div className="footer-columns">
           <div className="footer-brand-story">
-            <a href="#home" className="footer-brand" aria-label="NOOLAM home">
+            <a href="#home" className="footer-brand" aria-label="SILKORA home">
               <svg aria-hidden="true">
                 <use href="#lotus"></use>
               </svg>
               <span>
-                {"NOOLAM"}
+                {"SILKORA"}
               </span>
               <small>
                 {"A THREAD OF TRADITION"}
@@ -68,10 +68,10 @@ export default function Footer() {
           </nav>
           <nav className="footer-navigation" aria-label="Footer silk stories">
             <h3>
-              {"THE NOOLAM WORLD"}
+              {"THE SILKORA WORLD"}
             </h3>
             <a href="#the-archive">
-              {"The Noolam Archive"}
+              {"The Silkora Archive"}
             </a>
             <a href="#festive-silks">
               {"Ten Silks. Ten Muses."}
@@ -114,7 +114,7 @@ export default function Footer() {
         </div>
         <div className="footer-wordmark" aria-hidden="true">
           <span>
-            {"NOOLAM"}
+            {"SILKORA"}
           </span>
           <svg>
             <use href="#lotus"></use>
@@ -122,7 +122,7 @@ export default function Footer() {
         </div>
         <div className="footer-bottom">
           <small>
-            {"© 2026 NOOLAM. All rights reserved."}
+            {"© 2026 SILKORA. All rights reserved."}
           </small>
           <span>
             {"ONE THREAD. A THOUSAND STORIES."}

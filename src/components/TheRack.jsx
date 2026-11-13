@@ -3,7 +3,7 @@ export default function TheRack() {
     <section className="the-rack" id="the-rack" aria-labelledby="rack-title">
       <div className="rack-heading">
         <p className="section-kicker">
-          {"THE NOOLAM RACK"}
+          {"THE SILKORA RACK"}
         </p>
         <h2 id="rack-title">
           {"Every silk, "}
@@ -35,7 +35,7 @@ export default function TheRack() {
           {"SILK SAREE"}
         </p>
         <h3 id="rack-product-title">
-          {"Noolam Rani Pink Temple Border"}
+          {"Silkora Rani Pink Temple Border"}
         </h3>
         <p className="rack-product-description"></p>
         <div className="rack-product-tags" aria-label="Style details"></div>

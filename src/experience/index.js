@@ -1,7 +1,9 @@
 import { createExperienceScope } from './lifecycle.js';
+import { migrateLegacySelections } from './storage.js';
 
 /** Initialize the existing scroll, media, catalogue and canvas interactions after React commits. */
 export function initializeExperience(root) {
+  migrateLegacySelections();
   const scope = createExperienceScope(root);
   const { listen, setTimeout, clearTimeout, setInterval, clearInterval,
     requestAnimationFrame, cancelAnimationFrame,
@@ -566,7 +568,7 @@ export function initializeExperience(root) {
     }
     
     // Local look selections are style references, with no checkout or invented prices.
-    const bagStorageKey = 'noolam-look-bag-v1';
+    const bagStorageKey = 'silkora-look-bag-v1';
     let savedLooks = [];
     let savedSilks = [];
     try {
@@ -574,7 +576,7 @@ export function initializeExperience(root) {
       if (Array.isArray(stored)) savedLooks = [...new Set(stored.filter(index => Number.isInteger(index) && index >= 0 && index < looks.length))];
     } catch {/* Browsing and bag controls work when storage is unavailable. */}
     try {
-      const stored = JSON.parse(localStorage.getItem('noolam-silk-bag-v1') || '[]');
+      const stored = JSON.parse(localStorage.getItem('silkora-silk-bag-v1') || '[]');
       if (Array.isArray(stored)) savedSilks = [...new Set(stored.filter(index => Number.isInteger(index) && index >= 0 && index < 32))];
     } catch {/* Keep silk selections in memory if storage is unavailable. */}
     const addLookButton = document.querySelector('.add-look-button');
@@ -593,7 +595,7 @@ export function initializeExperience(root) {
     function persistLookBag() {
       try {
         localStorage.setItem(bagStorageKey, JSON.stringify(savedLooks));
-        localStorage.setItem('noolam-silk-bag-v1', JSON.stringify(savedSilks));
+        localStorage.setItem('silkora-silk-bag-v1', JSON.stringify(savedSilks));
       } catch {/* Keep selections in memory. */}
       const count = savedLooks.length + savedSilks.length;
       bagCount.textContent = String(count);
@@ -793,56 +795,56 @@ export function initializeExperience(root) {
       name: 'Temple Teal',
       image: 'assets/look-teal.webp'
     }, {
-      name: 'Noolam Royal Blue Zari',
+      name: 'Silkora Royal Blue Zari',
       image: 'assets/rack-blue.webp',
       kind: 'silk',
       category: 'Silk saree',
       tags: ['Gold border', 'Royal blue'],
       description: 'Royal blue silk with golden motifs and a broad, luminous border.'
     }, {
-      name: 'Noolam Rani Pink Temple Border',
+      name: 'Silkora Rani Pink Temple Border',
       image: 'assets/rack-pink.webp',
       kind: 'silk',
       category: 'Silk saree',
       tags: ['Temple border', 'Rani pink'],
       description: 'Vivid rani pink, golden temple triangles, and softly falling silk folds.'
     }, {
-      name: 'Noolam Violet Brocade',
+      name: 'Silkora Violet Brocade',
       image: 'assets/rack-purple.webp',
       kind: 'silk',
       category: 'Silk saree',
       tags: ['Gold brocade', 'Deep violet'],
       description: 'Deep violet silk with intricate golden motifs and a richly detailed pallu.'
     }, {
-      name: 'Noolam Emerald Silk',
+      name: 'Silkora Emerald Silk',
       image: 'assets/rack-green.webp',
       kind: 'silk',
       category: 'Silk saree',
       tags: ['Gold border', 'Emerald green'],
       description: 'Emerald green silk with a generous gold border, ready for a graceful drape.'
     }, {
-      name: 'Noolam Marigold Silk',
+      name: 'Silkora Marigold Silk',
       image: 'assets/rack-orange.webp',
       kind: 'silk',
       category: 'Silk saree',
       tags: ['Gold border', 'Marigold orange'],
       description: 'Warm orange silk and golden accents, inspired by the colours of celebration.'
     }, {
-      name: 'Noolam Ruby Temple Border',
+      name: 'Silkora Ruby Temple Border',
       image: 'assets/rack-maroon.webp',
       kind: 'silk',
       category: 'Silk saree',
       tags: ['Temple border', 'Deep ruby'],
       description: 'Deep ruby silk with a striking line of golden temple-inspired triangles.'
     }, {
-      name: 'Noolam Golden Hour Silk',
+      name: 'Silkora Golden Hour Silk',
       image: 'assets/rack-yellow.webp',
       kind: 'silk',
       category: 'Silk saree',
       tags: ['Gold border', 'Mustard yellow'],
       description: 'Mustard yellow silk with delicate golden motifs and a broad zari-style border.'
     }, {
-      name: 'Noolam Temple Teal',
+      name: 'Silkora Temple Teal',
       image: 'assets/rack-teal.webp',
       kind: 'silk',
       category: 'Silk saree',
@@ -1079,7 +1081,7 @@ export function initializeExperience(root) {
     measureSilks();
     let favouriteSilks = [];
     try {
-      const stored = JSON.parse(localStorage.getItem('noolam-silk-favourites-v1') || '[]');
+      const stored = JSON.parse(localStorage.getItem('silkora-silk-favourites-v1') || '[]');
       if (Array.isArray(stored)) favouriteSilks = [...new Set(stored.filter(index => Number.isInteger(index) && index >= 0 && index < silks.length))];
     } catch {/* Favourites remain usable without local storage. */}
     function updateSilkButtons() {
@@ -1097,7 +1099,7 @@ export function initializeExperience(root) {
     }
     function saveSilkFavourites() {
       try {
-        localStorage.setItem('noolam-silk-favourites-v1', JSON.stringify(favouriteSilks));
+        localStorage.setItem('silkora-silk-favourites-v1', JSON.stringify(favouriteSilks));
       } catch {/* Keep favourites in memory. */}
       updateSilkButtons();
     }
@@ -2477,7 +2479,7 @@ export function initializeExperience(root) {
     let bridalFocused = false;
     let bridalScrollFrame = 0;
     try {
-      const stored = Number(localStorage.getItem('noolam-bridal-last-v1'));
+      const stored = Number(localStorage.getItem('silkora-bridal-last-v1'));
       if (Number.isInteger(stored) && stored >= 0 && stored < bridalProducts.length) selectedBridal = stored;
     } catch {/* The collection remains browsable without storage. */}
     const bridalDotButtons = [];
@@ -2566,7 +2568,7 @@ export function initializeExperience(root) {
       updateBridalShopping();
       refreshBridalRotation();
       try {
-        localStorage.setItem('noolam-bridal-last-v1', String(selectedBridal));
+        localStorage.setItem('silkora-bridal-last-v1', String(selectedBridal));
       } catch {/* Keep the active portrait in memory. */}
       if (announce) document.querySelector('.bridal-live-status').textContent = `${product.name}. Bridal silk ${selectedBridal + 1} of 8.`;
     }
@@ -2725,7 +2727,7 @@ export function initializeExperience(root) {
     let weaveThreads = [9, 8, 14];
     let activeWeaveThread = 0;
     try {
-      const stored = JSON.parse(localStorage.getItem('noolam-weave-v1') || 'null');
+      const stored = JSON.parse(localStorage.getItem('silkora-weave-v1') || 'null');
       if (Array.isArray(stored) && stored.length === 3) {
         const seen = new Set();
         weaveThreads = stored.map(value => {
@@ -2817,7 +2819,7 @@ export function initializeExperience(root) {
     });
     function saveWeave() {
       try {
-        localStorage.setItem('noolam-weave-v1', JSON.stringify(weaveThreads));
+        localStorage.setItem('silkora-weave-v1', JSON.stringify(weaveThreads));
       } catch {/* Compose in memory when storage is unavailable. */}
     }
     function updateWeaveControls() {

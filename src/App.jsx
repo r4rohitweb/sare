@@ -34,7 +34,7 @@ export default function App() {
             <use href="#lotus"></use>
           </svg>
           <span>
-            {"NOOLAM"}
+            {"SILKORA"}
           </span>
           <small>
             {"A THREAD OF TRADITION"}

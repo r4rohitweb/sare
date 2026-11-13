@@ -24,7 +24,7 @@ export default function Dialogs() {
               </span>
               <div>
                 <strong>
-                  {"noolam"}
+                  {"silkora"}
                 </strong>
                 <small>
                   {"Silk stories, woven in colour"}
@@ -87,7 +87,7 @@ export default function Dialogs() {
           </button>
           <div>
             <span>
-              {"THE NOOLAM MUSE"}
+              {"THE SILKORA MUSE"}
             </span>
             <h2 id="muse-lightbox-title">
               {"A moment in crimson."}
@@ -152,7 +152,7 @@ export default function Dialogs() {
         </div>
         <div className="collection-copy">
           <p className="section-kicker">
-            {"THE NOOLAM ARCHIVE"}
+            {"THE SILKORA ARCHIVE"}
           </p>
           <span className="collection-number" aria-hidden="true">
             {"01 / 06"}

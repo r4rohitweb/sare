@@ -53,7 +53,7 @@ export default function Archive() {
         <div className="archive-heading">
           <div>
             <p className="section-kicker">
-              {"THE NOOLAM ARCHIVE"}
+              {"THE SILKORA ARCHIVE"}
             </p>
             <h2 id="archive-title">
               {"Six Moods. "}

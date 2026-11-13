@@ -1,12 +1,12 @@
 export default function Header() {
   return (
     <header className="site-header">
-      <a href="#home" className="brand" aria-label="Noolam home">
+      <a href="#home" className="brand" aria-label="Silkora home">
         <svg>
           <use href="#lotus"></use>
         </svg>
         <span>
-          {"NOOLAM"}
+          {"SILKORA"}
         </span>
         <small>
           {"A THREAD OF TRADITION"}
