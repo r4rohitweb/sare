@@ -2,3 +2,10 @@
 RewriteEngine On
 RewriteRule ^(?:index\.html)?$ dist/index.html [L]
 RewriteRule ^(assets|build)/(.*)$ dist/$1/$2 [L]
+
+# Revalidate page HTML so title and bundle updates appear after a rebuild.
+<IfModule mod_headers.c>
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+</IfModule>

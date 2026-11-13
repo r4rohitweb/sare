@@ -95,7 +95,7 @@ export default function Hero() {
             {"with you."}
           </h2>
           <p>
-            {"From the first drape to the memories that follow."}
+            {"From your first saree to the memories that follow."}
           </p>
         </div>
         <div className="hero-story hero-story-heirloom" aria-hidden="true">

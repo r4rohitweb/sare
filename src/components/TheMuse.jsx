@@ -8,11 +8,11 @@ export default function TheMuse() {
         <h2 id="muse-title">
           {"Feel the "}
           <span>
-            {"drape"}
+            {"silk"}
           </span>
         </h2>
         <p>
-          {"More than a silk. A feeling you carry."}
+          {"More than a saree. A feeling you carry."}
         </p>
       </div>
       <div className="muse-orbit">

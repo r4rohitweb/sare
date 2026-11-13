@@ -101,7 +101,7 @@ export default function TryTheLook() {
                     {"Teal Kanjivaram silk"}
                   </strong>
                   <small>
-                    {"The drape"}
+                    {"The saree"}
                   </small>
                 </span>
                 <span className="piece-plus" aria-hidden="true">
@@ -157,7 +157,7 @@ export default function TryTheLook() {
                 </span>
               </summary>
               <p>
-                {"A traditional waist belt defines the drape and highlights the pleats."}
+                {"A traditional waist belt complements the saree and highlights its pleats."}
               </p>
             </details>
             <details className="look-piece">

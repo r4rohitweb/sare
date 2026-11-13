@@ -136,7 +136,7 @@ export function initializeExperience(root) {
       description: 'Temple-inspired borders. Vivid colour pairings. A celebration of the unmistakable character of Kanchipuram silk.'
     }, {
       title: 'Banarasi Heirlooms',
-      description: 'Ornate brocade and jewel-toned drapes, inspired by the enduring beauty of Banarasi weaving. Elegance that feels like a treasured memory.'
+      description: 'Ornate brocade and jewel-toned sarees, inspired by the enduring beauty of Banarasi weaving. Elegance that feels like a treasured memory.'
     }, {
       title: 'Festive Radiance',
       description: 'Golden afternoons, marigold mornings, and celebrations that last into the night. A little colour for every joyful occasion.'
@@ -145,7 +145,7 @@ export function initializeExperience(root) {
       description: 'Quiet drama, deep hues, and the glimmer of gold. Discover the beauty of a border, a motif, a detail that catches the light.'
     }, {
       title: 'Sacred Silks',
-      description: 'Leaf greens and rich temple tones, inspired by moments of devotion. Graceful drapes for the traditions close to your heart.'
+      description: 'Leaf greens and rich temple tones, inspired by moments of devotion. Elegant silk sarees for the traditions close to your heart.'
     }];
     const collectionDialog = document.querySelector('.collection-dialog');
     let collectionTrigger;
@@ -821,7 +821,7 @@ export function initializeExperience(root) {
       kind: 'silk',
       category: 'Silk saree',
       tags: ['Gold border', 'Emerald green'],
-      description: 'Emerald green silk with a generous gold border, ready for a graceful drape.'
+      description: 'An emerald green silk saree with a generous gold border and timeless elegance.'
     }, {
       name: 'Silkora Marigold Silk',
       image: 'assets/rack-orange.webp',
@@ -898,7 +898,7 @@ export function initializeExperience(root) {
       kind: 'blouse',
       category: 'Silk blouse',
       tags: ['Short sleeves', 'Royal blue'],
-      description: 'Royal blue silk and gold details, designed as a rich contrast to your drape.'
+      description: 'Royal blue silk and gold details, designed as a rich contrast to your saree.'
     }, {
       name: 'Antique Gold Silk Blouse',
       image: 'assets/rack-blouse-gold.webp',
@@ -1805,7 +1805,7 @@ export function initializeExperience(root) {
       image: 'assets/muse-crimson.webp',
       position: '67% center',
       background: '#304b55',
-      caption: 'A rich red drape for the moments that stay with you.'
+      caption: 'A rich red silk saree for the moments that stay with you.'
     }, {
       title: 'Golden Hour',
       product: 14,

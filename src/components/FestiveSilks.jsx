@@ -16,7 +16,7 @@ export default function FestiveSilks() {
         <p>
           {"A colour for every celebration. "}
           <br />
-          {"A story in every drape."}
+          {"A story in every saree."}
         </p>
       </div>
       <div className="festive-toolbar">

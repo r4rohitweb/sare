@@ -58,7 +58,7 @@ export default function Archive() {
             <h2 id="archive-title">
               {"Six Moods. "}
               <span>
-                {"Timeless Drapes"}
+                {"Timeless Sarees"}
               </span>
             </h2>
           </div>

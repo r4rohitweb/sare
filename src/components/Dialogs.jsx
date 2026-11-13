@@ -55,7 +55,7 @@ export default function Dialogs() {
                   </svg>
                 </button>
                 <a className="motion-story-more" href="#the-rack">
-                  {"More drapes ↗"}
+                  {"More sarees ↗"}
                 </a>
               </div>
               <span className="motion-story-note">

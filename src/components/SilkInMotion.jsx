@@ -14,7 +14,7 @@ export default function SilkInMotion() {
           </h2>
         </div>
         <p>
-          {"Small moments. Beautiful drapes. "}
+          {"Special moments. Beautiful sarees. "}
           <br />
           {"Find a silk story that feels like you."}
         </p>
@@ -49,7 +49,7 @@ export default function SilkInMotion() {
             <b>
               {"✦"}
             </b>
-            {" Every drape, a story. "}
+            {" Every saree, a story. "}
             <b>
               {"✦"}
             </b>
@@ -63,7 +63,7 @@ export default function SilkInMotion() {
             <b>
               {"✦"}
             </b>
-            {" Every drape, a story. "}
+            {" Every saree, a story. "}
             <b>
               {"✦"}
             </b>

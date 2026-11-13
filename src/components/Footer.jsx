@@ -41,7 +41,7 @@ export default function Footer() {
             <p>
               {"Silks for the moments that matter. "}
               <br />
-              {"Discover colour, drape, and the stories "}
+              {"Discover colour, silk, and the stories "}
               <br />
               {"beautifully woven between."}
             </p>
@@ -77,7 +77,7 @@ export default function Footer() {
               {"Ten Silks. Ten Muses."}
             </a>
             <a href="#the-muse">
-              {"Feel the Drape"}
+              {"Feel the Silk"}
             </a>
             <a href="#silk-in-motion">
               {"Silk, in Motion"}
